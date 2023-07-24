@@ -16,7 +16,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #7cc576;
+  color: #ff0000;
 }
 
 a:hover {
@@ -1008,7 +1008,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 60px 0;
-  background: url("../img/testimonials-bg.jpg") no-repeat;
+  background: url("../img/background-frase.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;

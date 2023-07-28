@@ -1577,13 +1577,13 @@ section {
 
 /*--------------------------------------------------------------
 # Footer
---------------------------------------------------------------*/
-#footer {
-  background: url("../img/footer-bg.jpg") center center no-repeat;
+/* --------------------------------------------------------------*/
+/* #footer {
+  background-image:url("../img/gameof.png") center center no-repeat;
   color: #fff;
   font-size: 14px;
   position: relative;
-}
+} */ */
 
 #footer::before {
   content: "";

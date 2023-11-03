@@ -40,12 +40,17 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
+    <video src="/Site/assets/video/got_video.mp4" id="video" autoplay muted loop></video>
+      <audio id="tema_abertura" src="/Site/assets/video/got_theme.mp3" autoplay loop></audio>
     <div class="hero-container">
-      <a href="index.html" class="hero-logo imagem-responsiva" data-aos="zoom-in"><img src="assets/img/gf-logo.png" alt=""></a>
+       <a href="index.html" class="hero-logo imagem-responsiva" data-aos="zoom-in"><img src="assets/img/gf-logo.png" alt=""></a>
       
-      <a data-aos="fade-up" data-aos-delay="200" href="#about" class="btn-get-started scrollto">Get Started</a>
+      <a data-aos="fade-up" data-aos-delay="200" href="#about" class="btn-get-started scrollto">Começar</a>
+      
     </div>
-  </section><!-- End Hero -->
+  </section>
+  
+  <!-- End Hero -->
 
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex align-items-center">
@@ -58,10 +63,11 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Crônicas</a></li>
-          <li><a class="nav-link scrollto" href="#services">Serie</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Compras</a></li>
+          <li><a class="nav-link scrollto" href="#about">Introdução</a></li>
+          <li><a class="nav-link scrollto" href="#livros">Livros</a></li>
+          <li><a href="#historia" class="nav-link scrollto">História de Weteros</a></li>
           <li><a class="nav-link scrollto" href="#casas">Casas e Personagens</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Compras</a></li>
           <!--<li><a class="nav-link scrollto" href="#pricing">Preço</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>-->
         </ul>
@@ -113,7 +119,7 @@
     </section><!-- End About Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- <section id="services" class="services">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -143,14 +149,42 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section> -->
 
     <!-- ======= Featured Section ======= -->
-    <section id="featured" class="featured">
+    <section id="livros" class="featured">
       <div class="container">
 
+        <div class="section-title" data-aos="fade-up">
+          <h2>Livros</h2>
+          <p>conheça todos os livros da série</p>
+        </div>
+
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-right">
+          <div class="col-lg-6 mt-lg-0" data-aos="fade-right">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <!-- <h1><a href="" class="btn"><i class="bx bx-book" style="color:#B1C8C0;"></i></a></h1> -->
+                <a class="nav-link active show" style="display: block;" data-bs-toggle="tab" href="#tab-1">
+                  <h4>A guerra dos tronos</h4>
+                  <p>Eddard Stark aceita a posição de Mão do Rei oferecida por seu amigo, o rei Robert Baratheon, sem prever as tragédias iminentes. Ele aceita pois acredita que a antiga mão foi envenenado pela rainha Lannister, uma mulher cruel. Seu objetivo é proteger o rei, mas enfrentar os Lannisters é perigoso, pois sua sede de poder não tem limites e o rei está em grave perigo. Eddard percebe que sua família também está em perigo. Quem vencerá a guerra dos tronos?</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                  <h4>A fúria dos reis</h4>
+                  <p>Cinco facções disputam o controle de Westeros e o direito de ocupar o Trono de Ferro. Nesta história, irmão trama contra irmão e os mortos se levantam para caminhar pela noite.</p>
+                </a>
+              </li>
+              <li class="nav-item mt-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                  <h4>A tormenta das espadas</h4>
+                  <p>O futuro de Westeros está em jogo, e ninguém descansará até que os Sete Reinos tenham explodido em uma verdadeira tormenta de espadas. Dos cinco pretendentes ao trono, um está morto e outro caiu em desgraça, e ainda assim a guerra continua em toda sua fúria, enquanto alianças são feitas e desfeitas.</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6" style="margin-top: 8%;" data-aos="fade-left">
             <div class="tab-content">
               <div class="tab-pane active show" id="tab-1">
                 <figure>
@@ -167,7 +201,23 @@
                   <img src="assets/img/featured-4.png" alt="" class="img-fluid">
                 </figure>
               </div>
-              <div class="tab-pane" id="tab-4">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-4">
+                <figure>
+                  <img  src="assets/img/festim.jpg" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <figure>
+                  <img src="assets/img/featured-3.png" alt="" class="img-fluid">
+                </figure>
+              </div>
+              <div class="tab-pane" id="tab-6">
                 <figure>
                   <img src="assets/img/featured-4.png" alt="" class="img-fluid">
                 </figure>
@@ -177,19 +227,19 @@
           <div style="text-align: justify;" class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
             <ul class="nav nav-tabs flex-column">
               <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-4">
                   <h4>O festim dos corvos</h4>
                   <p>Há séculos os sete grandes reinos de Westeros se enfrentam em amargas disputas, batalhas e traições. Agora, com Joffrey Baratheon e Robb Stark fora da jogada e lordes insignificantes competindo pelas Ilhas de Ferro, a guerra que devorou o continente parece ter finalmente chegado ao fim.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">
                   <h4>A dança dos dragões</h4>
                   <p>Além do Mar Estreito, Daenerys Targaryen, a última herdeira da Casa Targaryen, governa uma cidade construída sobre o pó e a morte. Mas seus inimigos são cada vez mais numerosos e farão de tudo para destruí-la. Enquanto isso, dois jovens embarcam em missões distintas, mas que podem mudar o destino da Mãe dos Dragões.</p>
                 </a>
               </li>
               <li class="nav-item mt-2">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-6">
                   <h4>Os ventos do inverno</h4>
                   <p>Este será o 6º livro dessa série</p>
                 </a>
@@ -202,7 +252,7 @@
     </section><!-- End Featured Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="historia" class="why-us">
       <div class="container-fluid">
 
         <div class="row">
@@ -257,6 +307,7 @@
                     <p>
                       A Guerra dos Cinco Reis foi um grande conflito, travado em diversas frentes de batalha nos Sete Reinos, de 298 d.C. a 300 d.C.. Como o nome indica, cinco reis foram coroados durante a guerra.                   </p>
                   </div>
+                  
                 </li>
 
               </ul>
@@ -264,123 +315,12 @@
 
           </div>
 
-          <div class="col-lg-5 order-1 order-lg-1 align-items-stretch video-box aos-init aos-animate"  style='background-image: url("assets/img/gelo_e_fogo.jpg");' data-aos="fade-left" data-aos-delay="100"></div>
+          <div id="img_hist" class="col-lg-5 order-1 order-lg-1 align-items-stretch video-box aos-init aos-animate"  style='background-image: url("assets/img/img_hist.jpg");' data-aos="fade-left" data-aos-delay="100"></div>
             
           </div>
 
         </div>
 
-      </div>
-      <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Compras</h2>
-          <p>Adquira produtos únicos e autênticos que irão encantar os verdadeiros fãs dos Sete Reinos!</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Camisetas</li>
-              <!--<li data-filter=".filter-card">Variados</li> -->
-              <li data-filter=".filter-web">Canecas</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>R$ 52,5</h4>
-                <p>Camiseta</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>R$ 26,8</h4>
-                <p>Canecas</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>R$ 58,4</h4>
-                <p>Camiseta</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>R$ 30</h4>
-                <p>Caneca</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>R$ 64,86</h4>
-                <p>Camiseta</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>R$ 22,5</h4>
-                <p>Canecas</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
     </section>
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials">
@@ -394,7 +334,7 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p style="color: #fff">
+                <p style="color: #1B1C20">
                   Eu vivi mil vidas e amei mil amores. Andei por mundos distantes e vi o fim dos tempos. Porque eu li.
                 </p>
                 <img src="assets/img/george_martin.jpg" class="testimonial-img" alt="" style="background-color: #B1C8C0;">
@@ -734,6 +674,118 @@
 
       </div>
     </section>End Contact Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Compras</h2>
+          <p>Adquira produtos únicos e autênticos que irão encantar os verdadeiros fãs dos Sete Reinos!</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Camisetas</li>
+              <!--<li data-filter=".filter-card">Variados</li> -->
+              <li data-filter=".filter-web">Canecas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R$ 52,5</h4>
+                <p>Camiseta</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R$ 26,8</h4>
+                <p>Canecas</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R$ 58,4</h4>
+                <p>Camiseta</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R$ 30</h4>
+                <p>Caneca</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R$ 64,86</h4>
+                <p>Camiseta</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" ><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>R$ 22,5</h4>
+                <p>Canecas</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
 
   </main><!-- End #main -->
 

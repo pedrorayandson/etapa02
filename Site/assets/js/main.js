@@ -248,4 +248,40 @@
     })
   });
 
+window.addEventListener("scroll", function () {
+  const secao1 = document.getElementById("hero");
+  const audio = "tema_abertura";
+
+  if (isElementInViewport(secao1)) {
+      playAudio(audio);
+  } else {
+      pauseAudio(audio);
+  }
+  
+});
+
+function isElementInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return (
+      rect.top >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+  );
+}
+
+function playAudio(audioId) {
+  const audio = document.getElementById(audioId);
+  if (audio.paused) {
+      audio.play();
+  }
+}
+
+function pauseAudio(audioId) {
+  const audio = document.getElementById(audioId);
+  if (!audio.paused) {
+      audio.pause();
+  }
+}
+
+window.addEventListener('load', playAudio(document.getElementById("tema_abertura")));
 })()
+

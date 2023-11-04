@@ -250,12 +250,15 @@
 
 window.addEventListener("scroll", function () {
   const secao1 = document.getElementById("hero");
+  const secao2 = document.getElementById("navbar");
   const audio = "tema_abertura";
 
   if (isElementInViewport(secao1)) {
       playAudio(audio);
-  } else {
+  } else if(isElementInViewport(secao2)){
       pauseAudio(audio);
+  }else{
+    playAudio(audio)
   }
   
 });

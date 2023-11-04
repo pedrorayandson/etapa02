@@ -255,7 +255,6 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #151515;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -303,7 +302,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #151515;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -312,7 +311,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #151515;
+  color: #B1C8C0;
 }
 
 .navbar-mobile a:hover,
@@ -374,6 +373,11 @@ h6 {
   position: absolute;
   width: 100%;
   top: 0;
+}
+@media (max-width: 991px) {
+  #video{
+    display: none;
+  }
 }
 
 #hero .hero-container {
@@ -1129,7 +1133,19 @@ section {
   padding: 15px 0;
   text-align: center;
 }
-
+.casas{
+  border: none;
+  background-color: transparent;
+}
+.close{
+  border: none;
+  background-color: transparent;
+  font-weight: bold;
+  font-size: large;
+}
+.modal-body{
+  text-align: justify;
+}
 .clients img {
   width: 50%;
   filter: grayscale(100);

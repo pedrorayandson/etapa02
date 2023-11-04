@@ -281,7 +281,5 @@ function pauseAudio(audioId) {
       audio.pause();
   }
 }
-
-window.addEventListener('load', playAudio(document.getElementById("tema_abertura")));
 })()
 

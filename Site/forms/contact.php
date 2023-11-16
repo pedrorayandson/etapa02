@@ -6,24 +6,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $p3 = $_POST['p3'];
   $p4 = $_POST['p4'];
   $p5 = $_POST['p5'];
+  $nome = $_POST['nome'];
+  $email = $_POST['email'];
 
 
-  try{;
-    $username = null;
-    $password = null;
-    $db = new PDO("sqlite:database.sqlite", $username, $password);
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $db->exec(
-      "CREATE TABLE IF NOT EXISTS questionario(
-        id INT PRIMARY KEY,
-        p1 TEXT,
-        p2 TEXT
-        p3 TEXT,
-        p4 TEXT
-        p5 TEXT,
-    );");
+  try{
+    $db = new PDO("sqlite:../../database.sqlite");
     
-    $db->prepare("INSERT INTO questionario(p1, p2, p3, p4, p5) VALUES ($p1, $p2, $p3, $p4, $p5);");
+    
+    $stmt = $db->prepare("INSERT INTO questionario (nome, email, p1, p2, p3, p4, p5) VALUES (:n, :e, :p1, :p2, :p3, :p4, :p5)");
+
+    // Atribui os valores aos parâmetros da consulta
+    $stmt->bindParam(':n', $nome);
+    $stmt->bindParam(':e', $email);
+    $stmt->bindParam(':p1', $p1);
+    $stmt->bindParam(':p2', $p2);
+    $stmt->bindParam(':p3', $p3);
+    $stmt->bindParam(':p4', $p4);
+    $stmt->bindParam(':p5', $p5);
+
+    $stmt->execute();
   }catch(PDOException $e){
     echo $e->getMessage();
   }
@@ -94,14 +96,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <div class="container">
     <div class="row">
-    <form>
+    <form action="" method="post">
       <div class="form-group shadow p-3 mb-5 bg-white rounded">
         <label for="email">Nome:</label>
-        <input type="text" class="form-control" name="name" id="name">
+        <input type="text" class="form-control" name="nome" id="name">
       </div>
       <div class="form-group shadow p-3 mb-5 bg-white rounded">
         <label for="email">Email</label>
-         <input type="email" class="form-control" id="email" placeholder="name@example.com">
+         <input type="email" name="email" class="form-control" id="email" placeholder="name@example.com">
       </div>
       <div class="form-group shadow p-3 mb-5 bg-white rounded">
         <h5>Você já conhecia os livros "As crônicas de gelo e fogo"?</h4>

@@ -1,19 +1,20 @@
 <?php
 include 'routes.php';
 
-    $username = null;
-    $password = null;
-    $db = new PDO("sqlite: Site/forms/database.sqlite", $username, $password);
+    $db = new PDO("sqlite:database.sqlite");
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $db->exec(
-      "CREATE TABLE IF NOT EXISTS questionario(
-        id INT PRIMARY KEY,
-        p1 TEXT,
-        p2 TEXT
-        p3 TEXT,
-        p4 TEXT
-        p5 TEXT,
-    );");
+
+    $sql = "CREATE TABLE IF NOT EXISTS questionario(
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        email TEXT NOT NULL,
+        nome TEXT NOT NULL,
+        p1 TEXT NOT NULL,
+        p2 TEXT NOT NULL,
+        p3 TEXT NOT NULL,
+        p4 TEXT NOT NULL,
+        p5 TEXT NOT NULL
+    )";
+    $db->exec($sql);
 
 foreach ($routes as $key => $value) {
     if ($_SERVER['REQUEST_URI'] == $key) {
